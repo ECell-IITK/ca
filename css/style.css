@@ -3,30 +3,29 @@
   src: url("../fonts/RosewoodStd-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Bertoni Title';
+  font-family: "Bertoni Title";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Bertoni-title.woff2") format('woff2');
+  src: url("../fonts/Bertoni-title.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Bertoni';
+  font-family: "Bertoni";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Bertoni\ Title\ W01\ Regular.ttf") format('woff2');
+  src: url("../fonts/Bertoni\ Title\ W01\ Regular.ttf") format("woff2");
 }
 
-
 @font-face {
-  font-family: 'HWT-Artz';
+  font-family: "HWT-Artz";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/HWT\ Artz\ W00\ Regular.ttf") format('woff2');
+  src: url("../fonts/HWT\ Artz\ W00\ Regular.ttf") format("woff2");
 }
 
 body {
   line-height: 1.4;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   letter-spacing: 0.5px;
   font-size: 15px;
@@ -34,16 +33,21 @@ body {
   overflow-x: hidden;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -56,7 +60,9 @@ a {
   outline: none;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   outline: none;
 }
@@ -72,7 +78,7 @@ Responsive media queries
 ***********************************/
 
 .header {
-  background: url('../img/bnbnbn.jpg') no-repeat fixed;
+  background: url("../img/bnbnbn.jpg") no-repeat fixed;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -87,29 +93,34 @@ Responsive media queries
 
 .navbar-brand {
   font-size: 28px;
-  font-family: 'Bertoni';
+  font-family: "Bertoni";
   display: inline;
   margin-bottom: 10px;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
   color: #fff;
   outline: none;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
   font-size: 14px;
   font-weight: 400;
   color: #fff;
   outline: none;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
   color: #fffde0;
   background-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
   color: #fffde0;
   background-color: transparent;
 }
@@ -122,22 +133,19 @@ Responsive media queries
 }
 
 .button.yellow-blue {
-  background-color: #EAB543;
+  background-color: #eab543;
   color: #30336b;
 }
 
-
-
 .button.yellow-blue:hover {
   background-color: #30336b;
-  color: #EAB543;
+  color: #eab543;
 }
 
 @media (max-width: 768px) {
-	.navbar-collapse {
+  .navbar-collapse {
     background: rgba(48, 51, 107, 0.8);
   }
-  
 }
 
 .top-nav-collapse {
@@ -145,14 +153,11 @@ Responsive media queries
   background: rgba(48, 51, 107, 1);
 }
 
-
-
 .square-shadow {
   background-color: RGBA(0, 0, 0, 0.3);
   width: fit-content;
-  box-shadow: 10px 10px #EAB543;
+  box-shadow: 10px 10px #eab543;
   display: inline-block;
-  
 }
 .square-box {
   background-color: #30336b;
@@ -163,18 +168,17 @@ Responsive media queries
   min-height: 400px;
 }
 
-#whyca h3{
-  color: #EAB543;
-  font-family: 'HWT-Artz';
+#whyca h3 {
+  color: #eab543;
+  font-family: "HWT-Artz";
 }
 
-
-#whyca h1{
-  color: #EAB543;
+#whyca h1 {
+  color: #eab543;
 }
 
 #whyca p {
-  color: #FEA47F;
+  color: #fea47f;
 }
 
 .square-shadow-left {
@@ -185,36 +189,36 @@ Responsive media queries
   padding-left: 200px;
   padding-right: 10px;
   text-align: right;
-  font-family: 'HWT-Artz';
-  color: #F2F3EB;
+  font-family: "HWT-Artz";
+  color: #f2f3eb;
   font-size: 70px;
 }
 
-
-.navbar-border {}
+.navbar-border {
+}
 
 .banner-text {
   /* border-left: 5px solid #BE2525; */
   padding: 15px 40px;
-  color: #EAB543;
+  color: #eab543;
   margin-top: 170px;
 }
 
-.banner-text h2{
+.banner-text h2 {
   font-size: 60px;
   font-weight: 00;
   /* font-family: 'Questrial', sans-serif; */
-  font-family: 'HWT-Artz';
+  font-family: "HWT-Artz";
 }
 
 .banner-text h3 {
   font-size: 40px;
   font-weight: 300;
-  font-family: 'HWT-Artz', serif;
+  font-family: "HWT-Artz", serif;
 }
 
 .banner-text h2 span {
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
 }
 
 .title-box {
@@ -246,18 +250,18 @@ Responsive media queries
 }
 
 .deco {
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
 }
 
 #about {
-  background-color:rgba(246, 229, 141,1.0);
+  background-color: rgba(246, 229, 141, 1);
   min-height: 100vh;
   padding-top: 100px;
   margin-bottom: -3px;
 }
 
 #whyca {
-  background-color: #FEA47F ;
+  background-color: #fea47f;
   min-height: 100vh;
   padding-top: 100px;
   margin-bottom: -3px;
@@ -312,7 +316,6 @@ Responsive media queries
 }
 
 .square-box-left {
-
 }
 
 .test-sec blockquote {
@@ -325,7 +328,7 @@ Responsive media queries
 }
 
 .test-sec blockquote::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -14px;
   margin-left: 10px;
@@ -357,8 +360,8 @@ blockquote {
 }
 
 #contact .btn-primary {
-  background: #BE2525;
-  border: 1px solid #BE2525;
+  background: #be2525;
+  border: 1px solid #be2525;
 }
 
 .validation {
@@ -391,20 +394,23 @@ blockquote {
   background: #fff;
 }
 
-#sendmessage.show, #errormessage.show, .show {
+#sendmessage.show,
+#errormessage.show,
+.show {
   display: block;
 }
 
 footer {
   padding: 40px 0;
-  background: #F2F3EB;
+  background: #f2f3eb;
 }
 
 .footer a {
-  color: #BE2525;
+  color: #be2525;
 }
 
-.footer__navigation li, .social-list li {
+.footer__navigation li,
+.social-list li {
   display: inline-block;
 }
 
@@ -438,7 +444,7 @@ footer {
 }
 
 .contact-sec a {
-  color: #FFF;
+  color: #fff;
   background-color: RGBA(174, 142, 142, 0.7);
   display: inline-block;
   padding: 16px 34px;
@@ -446,7 +452,8 @@ footer {
   transition: all 0.5s ease-in 0s;
 }
 
-.carousel-info, blockquote {
+.carousel-info,
+blockquote {
   float: left;
 }
 
@@ -454,7 +461,7 @@ footer {
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
-  opacity: .5;
+  opacity: 0.5;
   display: inline-block;
   margin: 0;
 }
@@ -464,7 +471,8 @@ footer {
   margin-right: 15px;
 }
 
-.type-underline, .type-underline:hover {
+.type-underline,
+.type-underline:hover {
   color: #30336b;
 }
 
@@ -476,15 +484,14 @@ footer {
   color: #30336b;
 }
 
-.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
+.navbar-toggle,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
   position: relative;
   border-width: 0px;
 }
 
-
-
-
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -514,7 +521,7 @@ Responsive media queries
 }
 
 @media (min-width: 100px) and (max-width: 550px) {
-  .navbar-nav>li>a {
+  .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -533,14 +540,14 @@ Responsive media queries
   .social-list {
     margin-bottom: 15px;
   }
-  .banner-text h2, .banner-text p {
+  .banner-text h2,
+  .banner-text p {
     font-size: 30px;
   }
   .title-text {
     margin-bottom: 15px;
   }
   .banner-text {
-
   }
   .title-box {
     text-align: center;
@@ -559,7 +566,7 @@ Responsive media queries
   .square-shadow {
     background-color: RGBA(0, 0, 0, 0);
     width: fit-content;
-    box-shadow: 0px 0px #EAB543;
+    box-shadow: 0px 0px #eab543;
     display: inline-block;
   }
 
@@ -582,7 +589,7 @@ Responsive media queries
     text-align: center;
     font-size: 15px;
   }
-  .square-shadow-left{
+  .square-shadow-left {
     padding-left: 70px;
   }
 
@@ -593,3 +600,37 @@ Responsive media queries
   }
 }
 
+/* resposibilities */
+
+#responsibilities h3 {
+  color: #4834d4;
+  font-family: "HWT-Artz";
+}
+
+#responsibilities h1 {
+  color: #4834d4;
+}
+
+#responsibilities p {
+  color: #30336b;
+}
+
+#responsibilities .square-box {
+  background-color: #ffd2e8;
+  width: fit-content;
+  box-shadow: 10px 10px RGBA(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 8px 8px 8px 8px;
+  min-height: 300px;
+}
+
+#responsibilities {
+  background-color: #90ee90;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin-bottom: -3px;
+}
+
+#responsibilities .square-shadow-left {
+  background-color: #ffd2e8;
+}
