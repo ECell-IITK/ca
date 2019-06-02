@@ -337,6 +337,28 @@ Responsive media queries
   color: #fea47f;
 }
 
+/* Associates */
+#associates {
+  background-color: #fea47f;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin-bottom: -3px;
+}
+
+#associates h2 {
+  color: #30336b;
+  font-family: "HWT-Artz";
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#associates img {
+  max-width: 60%;
+  max-height: 80%;
+  padding-top: 10%;
+  vertical-align: middle;
+}
+
 /*footer*/
 
 footer {
