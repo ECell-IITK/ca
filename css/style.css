@@ -259,6 +259,11 @@ Responsive media queries
   font-family: "HWT-Artz";
 }
 
+
+#whyca .square-box {
+  max-width: 300px;
+}
+
 #whyca h1 {
   color: #eab543;
 }
@@ -330,7 +335,7 @@ Responsive media queries
 
 #contact .square-box {
   min-height: 200px;
-  min-width: 300px;
+  min-width: 260px;
 }
 
 #contact p {
