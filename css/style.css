@@ -259,6 +259,11 @@ Responsive media queries
   font-family: "HWT-Artz";
 }
 
+
+#whyca .square-box {
+  max-width: 300px;
+}
+
 #whyca h1 {
   color: #eab543;
 }
@@ -330,11 +335,54 @@ Responsive media queries
 
 #contact .square-box {
   min-height: 200px;
-  min-width: 300px;
+  min-width: 260px;
 }
 
 #contact p {
   color: #fea47f;
+}
+
+/* Associates */
+#associates {
+  background-color: #fea47f;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin-bottom: -3px;
+}
+#associates .t-row {
+  min-height: 150px !important;
+}
+#associates h2 {
+  color: #30336b;
+  font-family: "HWT-Artz";
+  font-size: 40px;
+  text-decoration: underline;
+}
+#associates .col-md-4 {
+  margin-bottom: 20px; 
+}
+
+#associates .associates-wrapper {
+  min-height: 150px !important;
+  vertical-align: top;
+  position: relative;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 10px 10px RGBA(255, 255, 255, 0.3);
+}
+
+#associates img {
+  max-width: 60%;
+  max-height: 80%;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /*footer*/
