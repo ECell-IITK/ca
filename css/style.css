@@ -395,9 +395,10 @@ footer {
   color: #f2f3eb;
   padding-top: 30px;
   padding-bottom: 30px;
+  line-height: 6;
 }
 
-footer h3 {
+footer h2 {
   color: #eab543;
   font-family: "Bertoni";
   font-weight: bold;
@@ -405,6 +406,8 @@ footer h3 {
 
 footer a{
   color: #eab543;
+  margin: 0 10px;
+  transition: color 0.1s;
 }
 
 .section-padding {
