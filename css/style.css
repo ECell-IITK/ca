@@ -112,6 +112,9 @@ Responsive media queries
 .navbar-default .navbar-nav > li > a:hover {
   color: #fffde0;
   background-color: transparent;
+  box-shadow:rgb(209 209 213) 0px 7px 15px;
+  border-radius: 8px;
+  font-size: 15px;
 }
 
 .navbar-default .navbar-nav > .active > a,
