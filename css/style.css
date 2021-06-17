@@ -2,12 +2,6 @@
   font-family: Rosewood;
   src: url("../fonts/RosewoodStd-Regular.otf") format("opentype");
 }
-@font-face {
-  font-family: "Bertoni";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Bertoni\ Title\ W01\ Regular.ttf") format("woff2");
-}
 
 @font-face {
   font-family: "HWT-Artz";
@@ -15,13 +9,32 @@
   font-weight: 400;
   src: url("../fonts/HWT\ Artz\ W00\ Regular.ttf") format("woff2");
 }
+@font-face {
+  font-family: 'raleway-heavy';
+  src: url('../fonts/raleway/raleway-heavy-webfont.eot');
+  src: url('../fonts/raleway/raleway-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway/raleway-heavy-webfont.woff') format('woff'),
+       url('../fonts/raleway/raleway-heavy-webfont.ttf') format('truetype'),
+       url('../fonts/raleway/raleway-heavy-webfont.svg#ralewayheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-regular';
+  src: url('../fonts/merriweather/merriweather-regular-webfont.eot');
+  src: url('../fonts/merriweather/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/merriweather/merriweather-regular-webfont.woff') format('woff'),
+       url('../fonts/merriweather/merriweather-regular-webfont.ttf') format('truetype'),
+       url('../fonts/merriweather/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-family: "merriweather-regular", sans-serif;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 400;
   min-width: 100vw;
   height: auto;
@@ -32,6 +45,9 @@ body {
 ol,
 ul {
   list-style: none;
+  font-family: 'raleway-heavy',sans-serif;
+  font-size:14px;
+  text-transform: uppercase;
 }
 
 blockquote,
@@ -89,7 +105,8 @@ Responsive media queries
 
 .navbar-brand {
   font-size: 28px;
-  font-family: "Bertoni";
+  font-family: 'raleway-heavy',sans-serif;
+  text-transform: uppercase;
   display: inline;
   margin-bottom: 10px;
 }
@@ -110,8 +127,8 @@ Responsive media queries
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #b08801;
   color:#fdc501;
+  background-image: linear-gradient(315deg, #ef56345d 0%, #ffc30f69 74%);
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -160,7 +177,7 @@ Responsive media queries
   width: fit-content;
   box-shadow: 10px 10px RGBA(0, 0, 0, 0.3);
   display: inline-block;
-  padding: 8px 8px 8px 8px;
+  padding: 10px 10px 10px 10px;
   min-height: 400px;
   margin-bottom: 50px;
 }
@@ -174,7 +191,8 @@ Responsive media queries
   padding-left: 200px;
   padding-right: 10px;
   text-align: right;
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
+  text-transform: uppercase;
   color: #f2f3eb;
   font-size: 70px;
 }
@@ -190,16 +208,22 @@ Responsive media queries
 }
 
 .banner-text h2 {
-  font-size: 60px;
-  font-weight: 00;
+  
+ font-size: 60px;   
+ background-color: #ef5734;
+background-image: linear-gradient(315deg, #ffcc2f 0%,#ef5734  74%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   /* font-family: 'Questrial', sans-serif; */
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
+ text-transform: uppercase;
 }
 
 .banner-text h3 {
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 300;
-  font-family: "HWT-Artz", serif;
+  font-family: "raleway-heavy", serif;
+  text-transform: uppercase;
 }
 
 .banner-text h2 span {
@@ -256,7 +280,7 @@ Responsive media queries
 
 #whyca h3 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
 }
 
 
@@ -266,10 +290,12 @@ Responsive media queries
 
 #whyca h1 {
   color: #eab543;
+  font-size: 30px;
 }
 
 #whyca p {
   color: #fea47f;
+  padding:4px 4px 4px 4px;
 }
 
 
@@ -285,15 +311,17 @@ Responsive media queries
 
 #responsibilities h3 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
 }
 
 #responsibilities h1 {
   color: #eab543;
+  font-size:30px;
 }
 
 #responsibilities p {
   color: #55E6C1;
+  padding:4px 4px 4px 4px;
 }
 
 #responsibilities .square-box {
@@ -321,16 +349,18 @@ Responsive media queries
 
 #contact h3 {
   color: #ff7979;
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
+  font-size:20px;
 }
 
 #contact h2 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  font-family: "raleway-heavy";
+  font-size:24px;
 }
-
 #contact h1 {
   color: #eab543;
+  font-size:30px;
 }
 
 #contact .square-box {
@@ -357,6 +387,9 @@ Responsive media queries
   font-family: "HWT-Artz";
   font-size: 40px;
   text-decoration: underline;
+}
+#associates h1{
+  font-size:30px;
 }
 #associates .col-md-4 {
   margin-bottom: 20px; 
@@ -396,7 +429,9 @@ footer {
 
 footer h3 {
   color: #eab543;
-  font-family: "Bertoni";
+  font-family: "raleway-heavy";
+  text-transform: uppercase;
+  font-size:18px;
   font-weight: bold;
 }
 
