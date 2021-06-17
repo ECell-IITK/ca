@@ -88,8 +88,10 @@ Responsive media queries
 }
 
 .navbar-brand {
-  font-size: 28px;
-  font-family: "Bertoni";
+  font-size: 30px;
+  /* font-family: "Bertoni"; */
+  font-family: 'Corben', cursive;
+  text-transform: uppercase;
   display: inline;
   margin-bottom: 10px;
 }
@@ -102,7 +104,7 @@ Responsive media queries
 }
 
 .navbar-default .navbar-nav > li > a {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   outline: none;
@@ -174,8 +176,8 @@ Responsive media queries
   padding-left: 200px;
   padding-right: 10px;
   text-align: right;
-  /* font-family: "HWT-Artz"; */
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
   color: #f2f3eb;
   font-size: 70px;
 }
@@ -199,8 +201,8 @@ Responsive media queries
 
 .banner-text h3 {
   font-size: 40px;
-  font-weight: 300;
-  font-family: "HWT-Artz", serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .banner-text h2 span {
@@ -400,14 +402,15 @@ Responsive media queries
 footer {
   background-color: #130f40;
   color: #f2f3eb;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
   line-height: 6;
 }
 
 footer h2 {
   color: #eab543;
-  font-family: "Bertoni";
+  font-family: 'Corben', cursive;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -415,6 +418,10 @@ footer a{
   color: #eab543;
   margin: 0 10px;
   transition: color 0.1s;
+}
+
+footer .row {
+  font-size: 1.2em;
 }
 
 .section-padding {
