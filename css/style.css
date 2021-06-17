@@ -18,7 +18,7 @@
 
 body {
   line-height: 1.4;
-  font-family: "Roboto", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 18px;
   letter-spacing: 0.5px;
   font-size: 15px;
@@ -89,7 +89,8 @@ Responsive media queries
 
 .navbar-brand {
   font-size: 28px;
-  font-family: "Bertoni";
+  font-family: "helvetica";
+  text-transform: uppercase;
   display: inline;
   margin-bottom: 10px;
 }
@@ -102,7 +103,7 @@ Responsive media queries
 }
 
 .navbar-default .navbar-nav > li > a {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   outline: none;
@@ -163,8 +164,9 @@ Responsive media queries
   padding: 8px 8px 8px 8px;
   min-height: 400px;
   margin-bottom: 50px;
+ 
+ 
 }
-
 
 .square-shadow-left {
   background-color: #30336b;
@@ -174,7 +176,6 @@ Responsive media queries
   padding-left: 200px;
   padding-right: 10px;
   text-align: right;
-  font-family: "HWT-Artz";
   color: #f2f3eb;
   font-size: 70px;
 }
@@ -259,7 +260,6 @@ Responsive media queries
   font-family: "HWT-Artz";
 }
 
-
 #whyca .square-box {
   max-width: 300px;
 }
@@ -272,12 +272,10 @@ Responsive media queries
   color: #fea47f;
 }
 
-
-
 /* Responsibilities  */
 
 #responsibilities {
-  background-color: #55E6C1;
+  background-color: #55e6c1;
   min-height: 100vh;
   padding-top: 100px;
   margin-bottom: -3px;
@@ -293,7 +291,7 @@ Responsive media queries
 }
 
 #responsibilities p {
-  color: #55E6C1;
+  color: #55e6c1;
 }
 
 #responsibilities .square-box {
@@ -308,14 +306,14 @@ Responsive media queries
   margin-bottom: -3px;
 }
 
-#contact h4{
+#contact h4 {
   color: #eab543;
   letter-spacing: 10px;
 }
-#contact h4 a{
+#contact h4 a {
   color: #eab543;
 }
-#contact h4 a :hover{
+#contact h4 a :hover {
   color: #ff7979;
 }
 
@@ -359,7 +357,7 @@ Responsive media queries
   text-decoration: underline;
 }
 #associates .col-md-4 {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 #associates .associates-wrapper {
@@ -390,19 +388,29 @@ Responsive media queries
 footer {
   background-color: #130f40;
   color: #f2f3eb;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
+  font-size: 30px;
 }
 
 footer h3 {
+  font-size: 30px;
   color: #eab543;
-  font-family: "Bertoni";
+  font-family: "helvetica";
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer h1{
+  padding: 20px;
 }
 
-footer a{
+footer a {
   color: #eab543;
+  padding: 20px;
+
 }
+
+
 
 .section-padding {
   padding: 60px 0px;
@@ -447,7 +455,6 @@ footer a{
   margin-top: 9px;
 }
 
-
 /***********************************
 ************************************
 Responsive media queries
@@ -484,6 +491,7 @@ Responsive media queries
     text-align: center !important;
   }
   .title-text {
+    
     margin-bottom: 15px;
   }
   .title-box {
@@ -535,4 +543,3 @@ Responsive media queries
     min-height: 300px;
   }
 }
-
