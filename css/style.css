@@ -174,7 +174,8 @@ Responsive media queries
   padding-left: 200px;
   padding-right: 10px;
   text-align: right;
-  font-family: "HWT-Artz";
+  /* font-family: "HWT-Artz"; */
+  font-family: 'Source Serif Pro', serif;
   color: #f2f3eb;
   font-size: 70px;
 }
@@ -256,7 +257,10 @@ Responsive media queries
 
 #whyca h3 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  /* font-family: "HWT-Artz"; */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
@@ -285,7 +289,10 @@ Responsive media queries
 
 #responsibilities h3 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  /* font-family: "HWT-Artz"; */
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 #responsibilities h1 {
@@ -326,7 +333,10 @@ Responsive media queries
 
 #contact h2 {
   color: #eab543;
-  font-family: "HWT-Artz";
+  /* font-family: "HWT-Artz"; */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #contact h1 {
