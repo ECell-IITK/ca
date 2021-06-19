@@ -557,6 +557,12 @@ Responsive media queries
   .banner-img {
     max-width: 200px;
   }
+  .banner-text h2{
+    font-size:36px;
+  }
+  .banner-text h3{
+    font-size:20px;
+  }
   .about-text {
     text-align: center;
     font-size: 15px;
