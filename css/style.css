@@ -440,6 +440,9 @@ footer h3 {
 footer a{
   color: #ffffff;
 }
+footer a:hover{
+  color: #FBB64A;
+}
 
 footer a i{
   margin-bottom: 18px;
