@@ -156,6 +156,10 @@ Responsive media queries
     .navbar-collapse {
         background: rgba(48, 51, 107, 0.8);
     }
+    .square-box {
+        min-height: 300px !important;
+        max-width: 250px !important;
+    }
 }
 
 .top-nav-collapse {
@@ -265,7 +269,6 @@ Responsive media queries
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: 0px;
-    font-size: 24px;
 }
 
 
@@ -476,6 +479,13 @@ footer a {
     font-size: small;
     line-height: 15px;
     font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+#about-text-2 {
+    margin-top: 45px;
 }
 
 .padding-right-zero {
@@ -508,6 +518,9 @@ Responsive media queries
 @media (min-width: 551px) and (max-width: 980px) {
     .title-text {
         margin-bottom: 15px;
+    }
+    .square-box {
+        height: 315px !important;
     }
 }
 
@@ -580,7 +593,7 @@ Responsive media queries
         font-size: 20px;
     }
     .about-text {
-        text-align: center;
+        text-align: left;
         font-size: 15px;
     }
     .square-shadow-left {
@@ -592,5 +605,9 @@ Responsive media queries
     }
     #whyca-h1 {
         position: unset;
+    }
+    #about img {
+        margin-right: 30px !important;
+        max-width: 100%;
     }
 }
