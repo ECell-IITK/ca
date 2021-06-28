@@ -188,17 +188,18 @@ Responsive media queries
 
 .square-shadow-left {
     background-color: #30336b;
-    width: fit-content;
-    box-shadow: 10px 10px RGBA(0, 0, 0, 0.3);
+    width: 44%;
+    /* box-shadow: 10px 10px RGBA(0, 0, 0, 0.3); */
     display: inline-block;
-    padding-left: 200px;
-    padding-right: 10px;
-    text-align: right;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    text-align: center;
     font-family: "raleway-heavy";
     text-transform: uppercase;
-    color: #f2f3eb;
+    color: #ffffff;
     font-size: 70px;
-}
+    border-radius: 20px;
+  }
 
 .navbar-border {}
 
@@ -386,7 +387,7 @@ Responsive media queries
 /* Associates */
 
 #associates {
-    background-color: #fea47f;
+    background-color: #ffffff;
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
@@ -397,27 +398,52 @@ Responsive media queries
 }
 
 #associates h2 {
-    color: #30336b;
-    font-family: "HWT-Artz";
-    font-size: 40px;
-    text-decoration: underline;
+  color: #30336b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0px;
+  background-color:rgb(205,206,219,0.5);
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
 }
 
-#associates h1 {
-    font-size: 30px;
-}
+#associates h1{
+    font-size:32px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
 
 #associates .col-md-4 {
     margin-bottom: 20px;
 }
-
+#first-img{
+    padding: 0px;
+    padding-right: 10px;
+  }
+  #second-img{
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #third-img{
+    padding: 0px;
+    padding-left: 10px;
+  }
 #associates .associates-wrapper {
-    min-height: 150px !important;
-    vertical-align: top;
-    position: relative;
-    margin: 15px;
-    background-color: white;
-    box-shadow: 10px 10px RGBA(255, 255, 255, 0.3);
+  min-height: 225px !important;
+  vertical-align: top;
+  position: relative;
+  /* margin: 15px; */
+  padding: 15px;
+  background-color: white;
+  border: #cdcedb solid;
+  border-radius: 10px;
 }
 
 #associates img {
@@ -432,8 +458,50 @@ Responsive media queries
     left: 0;
     right: 0;
     margin: auto;
-}
+  }
+/*apply-now*/
 
+#apply-now {
+    min-height: 65vh;
+    background: #FBB64A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #30326B;
+  }
+  #apply-now h3{
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width: fit-content;
+    padding:15px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #apply-now a{
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    background-color: #30326B;
+    border-radius: 15px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  #apply-now a:hover{
+    color: #FBB64A;
+    cursor: pointer;
+  }
 
 /*footer*/
 
@@ -460,6 +528,7 @@ footer a {
 
 footer a:hover {
     color: #FBB64A;
+    cursor: pointer;
 }
 
 footer a i {
@@ -606,7 +675,8 @@ Responsive media queries
         font-size: 15px;
     }
     .square-shadow-left {
-        padding-left: 70px;
+        width: 75%;
+        border-radius: 10px;
     }
     .square-box {
         padding: 20px;
@@ -624,4 +694,31 @@ Responsive media queries
         margin-right: 30px !important;
         max-width: 100%;
     }
+    #apply-now {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      #apply-now h3{
+        width: 75%;
+        font-size: 1.5em;
+      }
+      #associates h1{
+        font-size: 28px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+      #associates .container {
+        width: 75%; 
+        text-align: center;
+      }
+      #associates .col-md-4{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #associates .associates-wrapper {
+        min-height: 150px !important;
+      }
+      #apply-now a{
+        width: 60%;
+      }
 }
