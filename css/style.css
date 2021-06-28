@@ -190,8 +190,8 @@ Responsive media queries
   width: fit-content;
    /* box-shadow: 10px 10px RGBA(0, 0, 0, 0.3);  */
   display: inline-block;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
    text-align: center;
   font-family: "raleway-heavy";
   text-transform: uppercase;
