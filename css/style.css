@@ -600,11 +600,16 @@ Responsive media queries
         padding-left: 70px;
     }
     .square-box {
-        padding: 8px 8px 8px 8px;
+        padding: 20px;
         min-height: 300px;
     }
     #whyca-h1 {
-        position: unset;
+        /* position: relative;
+        left: 10%;
+        right: 50% !important; */
+        margin-right: 0px;
+        max-width: 90%;
+        font-size: 19px;
     }
     #about img {
         margin-right: 30px !important;
