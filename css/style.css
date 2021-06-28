@@ -473,9 +473,8 @@ Responsive media queries
     text-align: center;
     background-color: white;
     display: inline-block;
-    width: 44%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: fit-content;
+    padding:15px;
     border-radius: 7px;
     font-weight: 600;
     font-size: 26px;
