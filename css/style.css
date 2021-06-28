@@ -123,8 +123,8 @@ Responsive media queries
 }
 
 .navbar-default .navbar-nav > li > a {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 17px;
+  font-weight: 700;
   color: #fff;
   outline: none;
 }
@@ -280,7 +280,7 @@ Responsive media queries
 .title-box {
   padding-left: 180px;
   text-align: left;
-  margin-left: -20px;
+  margin-left: -130px;
 }
 
 .overlay-detail {
@@ -502,7 +502,7 @@ footer a{
   position: relative;
   top: -4px;
   margin-right: 3px;
-  transform: translate(-20px,-17px);
+  transform: translate(-130px,-17px);
 }
 
 .about-text {
