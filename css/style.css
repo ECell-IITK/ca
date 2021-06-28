@@ -597,6 +597,8 @@ Responsive media queries
   }
   .square-shadow-left {
     padding-left: 70px;
+    margin-left:20px;
+    margin-right:20px;
   }
 
   .square-box {
