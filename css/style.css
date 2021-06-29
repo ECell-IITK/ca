@@ -293,6 +293,7 @@ Responsive media queries
     display: inline-block;
     position: relative;
     left: 5%;
+    font-weight:bold;
 }
 
 .square-box h3 {
@@ -325,11 +326,11 @@ Responsive media queries
   
   #responsibilities h1 {
     color: #FFFFFF;
-    font-size:19px;
+    font-size:x-large;
     font-family: 'Montserrat', sans-serif;
   
     padding-bottom: 7px;
-    
+    font-weight:bold;
    
     
     
@@ -386,10 +387,10 @@ Responsive media queries
   }
   #contact h1 {
     color: white;
-    font-size:19px;
+    font-size:x-large;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 10px;
-   
+   font-weight:bold;
   
   
   }
@@ -435,11 +436,11 @@ Responsive media queries
 }
 
 #associates h1{
-    font-size:32px;
+    font-size:x-large;
     font-family: 'Montserrat', sans-serif;
     padding-top: 5px;
     padding-bottom: 10px;
-    font-weight: 700;
+    font-weight: bold;
   }
 
 #associates .col-md-4 {
@@ -698,7 +699,7 @@ Responsive media queries
         font-size: 15px;
     }
     .square-shadow-left {
-        width: 90%;
+        width: 85%;
         border-radius: 10px;
         
        
@@ -714,6 +715,7 @@ Responsive media queries
         margin-right: 0px;
         max-width: 90%;
         font-size: 19px;
+        font-weight:700;
     }
     #about img {
         margin-right: 30px !important;
@@ -728,7 +730,7 @@ Responsive media queries
         font-size: 1.5em;
       }
       #associates h1{
-        font-size: 28px;
+        font-size: 19px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
       }
@@ -745,5 +747,15 @@ Responsive media queries
       }
       #apply-now a{
         width: 60%;
+      }
+      #responsibilities h1{
+          font-size:19px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight:700;
+      }
+      #contact h1 {
+          font-size:19px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight:700;
       }
 }
