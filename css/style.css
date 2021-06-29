@@ -403,7 +403,8 @@ Responsive media queries
     color: #30326B;
   }
   .square-box img{
-    border-radius:60% ;
+    border-radius:60%;
+    margin-left:-35px;
   }
 
 /* Associates */
@@ -699,6 +700,7 @@ Responsive media queries
     .square-shadow-left {
         width: 90%;
         border-radius: 10px;
+        
        
     }
     .square-box {
