@@ -448,14 +448,18 @@ footer a{
   margin-bottom: 50px;
 }
 
-.icon-image {
-  max-width: 45px;
+.icon-float{
   float: left;
+  padding:100px;
+}
+.icon-image {
+  max-width: 175px;
   margin-bottom: 100px;
   position: relative;
   top: -4px;
   margin-right: 3px;
 }
+
 
 .about-text {
   color: #30336b;
