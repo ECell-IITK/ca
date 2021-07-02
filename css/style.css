@@ -626,7 +626,7 @@ footer a i {
 .icon-image {
   max-width: 180px;
   float: left;
-  margin:-6px 3px 100px 110px
+  margin:-6px 3px 100px 110px;
   position: relative;
   top: -4px;
   transform: translate(-130px,-17px);
