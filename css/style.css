@@ -126,7 +126,7 @@ Responsive media queries
 }
 
 .navbar-default .navbar-nav > li > a {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   color: #fff;
   outline: none;
@@ -135,7 +135,7 @@ Responsive media queries
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
   color: #fdc501;
-  background-image: linear-gradient(315deg, #ef56345d 0%, #ffc30f69 74%);
+  /* background-image: linear-gradient(315deg, #ef56345d 0%, #ffc30f69 74%); */
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -145,16 +145,57 @@ Responsive media queries
   background-color: transparent;
 }
 
-.button {
-  border-radius: 5px;
-  padding: 4px 8px 4px 8px;
-  text-decoration: none;
-  font-weight: 400;
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #30326B;
+  padding: 10px;
+  border-radius: 15px;
+  height: 5%;
+  padding-bottom: 5px;
+}
+.grid-item {
+  background-color: #30326B;
+  text-align: center;
+  padding: 5px;  
+  font-family: "raleway-heavy",sans-serif;
+  border-radius: 20px;
+}
+
+.item1 {
+  color: #ffffff;
+  font-family: sans-serif;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: left;
+  font-size: 22px;
+  padding-left: 20px;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  border-radius: 20px;
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: lighter;
+  align-content: center;
+  vertical-align: middle;
+  transform: translate(-5px,5px);
 }
 
 .button.yellow-blue {
   background-color: #eab543;
   color: #30336b;
+  font-family: "raleway-heavy";
+  float: right;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .button.yellow-blue:hover {
@@ -178,9 +219,9 @@ Responsive media queries
 }
 
 .square-shadow {
-  background-color: RGBA(0, 0, 0, 0.3);
+  background-color: RGBA(0, 0, 0, 0);
   width: fit-content;
-  box-shadow: 10px 10px #eab543;
+  box-shadow: none;
   display: inline-block;
 }
 
@@ -231,8 +272,7 @@ Responsive media queries
 
 .banner-text h2 {
   font-size: 60px;
-  background-color: #ef5734;
-  background-image: linear-gradient(315deg, #ffcc2f 0%, #ef5734 74%);
+  background-color: #ffffff;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   /* font-family: 'Questrial', sans-serif; */
@@ -252,9 +292,9 @@ Responsive media queries
 }
 
 .title-box {
-  padding-left: 250px;
-  text-align: right;
-  margin-left: -20px;
+  padding-left: 180px;
+  text-align: left;
+  margin-left: -130px;
 }
 
 .overlay-detail {
@@ -584,12 +624,13 @@ footer a i {
 }
 
 .icon-image {
-  max-width: 45px;
+  max-width: 180px;
   float: left;
   margin-bottom: 100px;
   position: relative;
   top: -4px;
   margin-right: 3px;
+  transform: translate(-130px,-17px);
 }
 
 .about-text {
