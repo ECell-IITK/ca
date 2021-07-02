@@ -144,7 +144,9 @@ Responsive media queries
   color: #fdc501;
   background-color: transparent;
 }
-
+.navbar-collapse{
+  transform: translate(100px,0px);
+}
 
 .grid-container {
   display: grid;
@@ -192,7 +194,7 @@ Responsive media queries
   color: #30336b;
   font-family: "raleway-heavy";
   float: right;
-  border-radius: 5px;
+  border-radius:15px;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -626,10 +628,10 @@ footer a i {
 .icon-image {
   max-width: 180px;
   float: left;
-  margin:0px 3px 100px 110px;
+  margin:0px 3px 100px -130px;
   position: relative;
   top: -4px;
-  transform: translate(-130px,-17px);
+  transform: translate(0px,-17px);
 }
 
 .about-text {
@@ -659,6 +661,7 @@ footer a i {
 
 .navbar-nav > li > a {
   padding-top: 24px;
+  padding-right: 15px;
   padding-bottom: 24px;
 }
 
@@ -710,13 +713,32 @@ Responsive media queries
     margin-right: auto;
     padding-left: unset;
     padding-right: unset;
-    margin-top: 0px;
+    margin-top: 100px;
     min-width: 100vw;
     padding-top: 0px;
+    padding-bottom: 100px;
+  }
+  .grid-container{
+    background-color: transparent;
+    align-self: center;
+    place-items: center;
+    display: -moz-inline-box;
+  }
+  .item1{
+    display: none;
+    place-items: center;
+  }
+  .item2{
+    background-color: transparent;
+    place-items: center;
+    margin-right: 100px;
   }
   .title-box h3 {
     padding-top: 0px;
     margin-top: 0px;
+  }
+  .icon-image{
+    margin-left: auto;
   }
   .square-shadow {
     background-color: RGBA(0, 0, 0, 0);
