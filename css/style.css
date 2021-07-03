@@ -165,11 +165,11 @@ Responsive media queries
 
 .item1 {
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   grid-column: 1 / span 2;
   grid-row: 1;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   padding-left: 20px;
   vertical-align: middle;
   align-content: center;
@@ -211,6 +211,17 @@ Responsive media queries
     min-height: 300px !important;
     max-width: 250px !important;
   }
+  .grid-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13.5px;
+  }
+  a.button.yellow-blue{
+    padding: 10px 15px;
+    margin-right: 15px;
+  }
+  .navbar-brand > img {
+    display:none;
+}
 }
 
 .top-nav-collapse {
@@ -705,7 +716,7 @@ Responsive media queries
     text-align: center !important;
   }
   .title-box {
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding-left: unset;
@@ -714,9 +725,12 @@ Responsive media queries
     min-width: 100vw;
     padding-top: 0px;
   }
+  .title-box h2{
+    margin: 10px 0px 0px 10px;
+  }
   .title-box h3 {
     padding-top: 0px;
-    margin-top: 0px;
+    margin: 60px 0px 0px 15px;
   }
   .square-shadow {
     background-color: RGBA(0, 0, 0, 0);
