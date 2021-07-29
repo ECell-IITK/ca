@@ -27,6 +27,7 @@
 }
 
 body {
+    /* background-color: #141414; */
     line-height: 1.4;
     font-family: "merriweather-regular", sans-serif;
     letter-spacing: 0.5px;
@@ -91,7 +92,16 @@ Responsive media queries
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    font-family: "Montserrat", sans-serif;
+    /* background-color: #141414; */
 }
+
+
+/* 
+header {
+    background: url("../img/bnbnbn.jpg") no-repeat fixed;
+    background-size: cover;
+} */
 
 .navbar-default {
     background-color: transparent;
@@ -137,55 +147,41 @@ Responsive media queries
 
 .grid-container {
     display: grid;
-    grid-gap: 10px;
-    background-color: #30326B;
-    padding: 10px;
+    grid-template-columns: 3fr 1fr;
+    background-color: #111111;
     border-radius: 15px;
-    height: 5%;
-    padding-bottom: 5px;
 }
 
 .grid-item {
-    background-color: #30326B;
     text-align: center;
-    padding: 5px;
-    font-family: "raleway-heavy", sans-serif;
+    font-family: "Montserrat", sans-serif;
     border-radius: 20px;
+    /* padding: 15px; */
 }
 
 .item1 {
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
-    padding-left: 20px;
-    vertical-align: middle;
-    align-content: center;
+    padding: 20px;
 }
 
 .item2 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
     border-radius: 20px;
-    vertical-align: middle;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
-    align-content: center;
-    vertical-align: middle;
-    transform: translate(-5px, 5px);
+    padding: 10px;
 }
 
 .button.yellow-blue {
     background-color: #eab543;
-    color: #30336b;
-    font-family: "raleway-heavy";
+    color: #111111;
+    font-family: "Montserrat", sans-serif;
     float: right;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .button.yellow-blue:hover {
@@ -216,7 +212,7 @@ Responsive media queries
 
 .top-nav-collapse {
     padding: 0;
-    background: rgba(48, 51, 107, 1);
+    background: #141414;
 }
 
 .square-shadow {
@@ -235,8 +231,8 @@ Responsive media queries
     min-height: 400px;
     /* width: 320px; */
     margin-bottom: 50px;
-    border-radius: 19px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* border-radius: 19px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .whyapply {
@@ -361,6 +357,7 @@ Responsive media queries
 
 #whyca .square-box {
     background-color: #222222;
+    border-radius: 20px;
 }
 
 .square-box h3 {
@@ -379,24 +376,38 @@ Responsive media queries
 /* Responsibilities  */
 
 #responsibilities {
-    background-color: white;
+    background-color: #141414;
+    border-radius: 140px 140px 0px 0px;
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
 }
 
 #responsibilities h3 {
-    color: #30326b;
+    color: #F8A728;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
 #responsibilities h1 {
-    color: #ffffff;
+    color: white;
+    text-transform: uppercase;
+    background-color: #141414;
     font-size: x-large;
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 7px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 20%;
     font-weight: bold;
+    margin-bottom: 45px;
+    border-bottom-style: solid;
+    border-bottom-width: 4.5px;
+    padding-bottom: 3px;
+    border-color: #E64E04;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    left: 1%;
 }
 
 .text-right {
@@ -404,12 +415,15 @@ Responsive media queries
 }
 
 #responsibilities p {
-    color: #000000;
+    color: white;
     padding: 4px 4px 4px 4px;
 }
 
 #responsibilities .square-box {
     min-height: 200px;
+    background-color: #141414;
+    font-family: "Montserrat", sans-serif;
+    width: 70%;
 }
 
 .row1 {
@@ -419,11 +433,16 @@ Responsive media queries
 
 /* Contacts */
 
+.contact-background {
+    background-color: #141414;
+}
+
 #contact {
-    background-color: #eaebf0;
+    background-color: white;
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
+    border-radius: 170px;
 }
 
 #contact h4 {
@@ -454,11 +473,24 @@ Responsive media queries
 }
 
 #contact h1 {
-    color: white;
+    color: #2A2A2A;
+    text-transform: uppercase;
+    background-color: white;
     font-size: x-large;
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 20%;
     font-weight: bold;
+    margin-bottom: 45px;
+    border-bottom-style: solid;
+    border-bottom-width: 4.5px;
+    padding-bottom: 3px;
+    border-color: #E64E04;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    left: 1%;
 }
 
 #contact .square-box {
@@ -470,7 +502,7 @@ Responsive media queries
     color: #30326b;
 }
 
-.square-box img {
+#contact img {
     border-radius: 60%;
     margin-left: -35px;
 }
@@ -479,10 +511,12 @@ Responsive media queries
 /* Associates */
 
 #associates {
-    background-color: #ffffff;
+    background-color: #141414;
     min-height: 100vh;
     padding-top: 100px;
+    padding-bottom: 0px;
     margin-bottom: -3px;
+    /* border-radius: 170px 170px 0px 0px; */
 }
 
 #associates .t-row {
@@ -490,31 +524,46 @@ Responsive media queries
 }
 
 #associates h2 {
-    color: #30336b;
+    color: #2A2A2A;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 10px;
+    display: inline-block;
     margin-bottom: 0px;
-    background-color: rgb(205, 206, 219, 0.5);
-    padding-left: 20px;
+    background-color: #F8A728;
+    padding: 5px 15px;
     text-align: left;
     border-radius: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     font-weight: 700;
+    transform: rotate(-90deg) translate(-100px, 0px);
 }
 
 #associates h1 {
+    color: white;
+    text-transform: uppercase;
+    background-color: #141414;
     font-size: x-large;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 20%;
     font-weight: bold;
+    margin-bottom: 45px;
+    border-bottom-style: solid;
+    border-bottom-width: 4.5px;
+    padding-bottom: 3px;
+    border-color: #E64E04;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    left: 1%;
 }
 
 #associates .col-md-4 {
     margin-bottom: 20px;
 }
 
+
+/* 
 #first-img {
     padding: 0px;
     padding-right: 10px;
@@ -529,25 +578,25 @@ Responsive media queries
 #third-img {
     padding: 0px;
     padding-left: 10px;
-}
+} */
 
 #associates .associates-wrapper {
     min-height: 225px !important;
     vertical-align: top;
     position: relative;
-    /* margin: 15px; */
-    padding: 15px;
+    margin: 15px;
+    padding: 0px;
     background-color: white;
     border: #cdcedb solid;
-    border-radius: 10px;
+    border-radius: 70px;
 }
 
 #associates img {
     max-width: 60%;
     max-height: 80%;
     vertical-align: middle;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -560,15 +609,16 @@ Responsive media queries
 /*apply-now*/
 
 #apply-now {
+    background-color: #F8A728;
     min-height: 65vh;
-    background: #fbb64a;
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: "Montserrat", sans-serif;
-    color: #30326b;
+    color: #2A2A2A;
 }
 
 #apply-now h3 {
+    color: #2A2A2A;
     text-align: center;
     background-color: white;
     display: inline-block;
@@ -586,7 +636,7 @@ Responsive media queries
     text-align: center;
     color: #ffffff;
     font-size: 27px;
-    background-color: #30326b;
+    background-color: #222222;
     border-radius: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -605,8 +655,13 @@ Responsive media queries
 
 /*footer*/
 
+.seperator :empty {
+    background-color: white;
+    padding: auto;
+}
+
 footer {
-    background-color: #30326b;
+    background-color: #222222;
     color: #ffffff;
     padding-top: 33px;
     padding-bottom: 75px;
@@ -614,6 +669,7 @@ footer {
     font-size: 18px;
     font-weight: bold;
     height: auto;
+    margin-top: 0px;
 }
 
 footer h3 {
@@ -736,6 +792,17 @@ Responsive media queries
         justify-content: center;
         align-items: center;
     }
+    #associates h2 {
+        color: #2A2A2A;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        margin-bottom: 0px;
+        background-color: #F8A728;
+        padding: 5px 15px;
+        border-radius: 8px;
+        font-weight: 700;
+        transform: rotate(0deg) translate(0px, 0px);
+    }
 }
 
 @media (min-width: 100px) and (max-width: 550px) {
@@ -784,9 +851,9 @@ Responsive media queries
         box-shadow: 0px 0px #eab543;
         display: inline-block;
     }
-    .header {
+    /* .header {
         background-color: #30336b;
-    }
+    } */
     .display-sm {
         display: inline-block;
     }
@@ -861,6 +928,18 @@ Responsive media queries
     }
     #apply-now a {
         width: 60%;
+    }
+    #associates h2 {
+        color: #2A2A2A;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        margin-bottom: 0px;
+        background-color: #F8A728;
+        padding: 5px 15px;
+        text-align: left;
+        border-radius: 8px;
+        font-weight: 700;
+        transform: rotate(0deg) translate(0px, 0px);
     }
     #responsibilities h1 {
         font-size: 19px;
