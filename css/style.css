@@ -237,7 +237,7 @@ Responsive media queries
 }
 
 .square-box {
-  background-color: #eaebf0;
+ 
   width: fit-content;
   /* box-shadow: 10px 10px RGBA(0, 0, 0, 0.3); */
   display: inline-block;
@@ -246,7 +246,7 @@ Responsive media queries
   /* width: 320px; */
   margin-bottom: 50px;
   border-radius: 19px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
 }
 
 .whyapply {
@@ -257,7 +257,7 @@ Responsive media queries
 }
 
 .square-shadow-left {
-  background-color: #30326b;
+  
   width: fit-content;
   /* box-shadow: 10px 10px RGBA(0, 0, 0, 0.3);  */
   display: inline-block;
@@ -268,7 +268,7 @@ Responsive media queries
   text-transform: uppercase;
   color: #f2f3eb;
   font-size: 70px;
-  border-radius: 19px;
+  border-bottom:4px solid #E64E04;
 }
 
 .navbar-border {
@@ -380,14 +380,16 @@ Responsive media queries
 /* Responsibilities  */
 
 #responsibilities {
-  background-color: white;
+  background-color:#141414;
   min-height: 100vh;
   padding-top: 100px;
   margin-bottom: -3px;
+  background: linear-gradient(107.86deg, rgba(128, 128, 128, 0.3) 5.88%, rgba(0, 0, 0, 0) 98.08%), #141414;
+border-radius: 170px 170px 0px 0px;
 }
 
 #responsibilities h3 {
-  color: #30326b;
+  color: #F8A728;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -405,7 +407,7 @@ Responsive media queries
 }
 
 #responsibilities p {
-  color: #000000;
+  color: #FFFFFF;
   padding: 4px 4px 4px 4px;
 }
 
@@ -420,10 +422,11 @@ Responsive media queries
 /* Contacts */
 
 #contact {
-  background-color: #eaebf0;
+  background-color: #FFFFFF;
   min-height: 100vh;
   padding-top: 100px;
   margin-bottom: -3px;
+  border-radius:170px;
 }
 
 #contact h4 {
@@ -431,27 +434,27 @@ Responsive media queries
   letter-spacing: 10px;
 }
 #contact h4 a {
-  color: #30326b;
+  color: #2F3940;
 }
 #contact h4 a :hover {
   color: #ff7979;
 }
 
 #contact h5 {
-  color: #30326b;
+  color: #2F3940;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 20px;
 }
 
 #contact h3 {
-  color: #30326b;
+  color: #F8A728;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 #contact h1 {
-  color: white;
+  color: #2A2A2A;
   font-size: x-large;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 10px;
@@ -469,6 +472,9 @@ Responsive media queries
 .square-box img {
   border-radius: 60%;
   margin-left: -35px;
+}
+.queries {
+  background-color:#FFFFFF;
 }
 
 /* Associates */
