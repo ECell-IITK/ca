@@ -511,12 +511,10 @@ header {
 /* Associates */
 
 #associates {
-    background-color: #141414;
+    background-image: url(../img/background_associates.png);
     min-height: 100vh;
     padding-top: 100px;
-    padding-bottom: 0px;
     margin-bottom: -3px;
-    /* border-radius: 170px 170px 0px 0px; */
 }
 
 #associates .t-row {
@@ -526,36 +524,42 @@ header {
 #associates h2 {
     color: #2A2A2A;
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    display: inline-block;
+    font-size: 15px;
     margin-bottom: 0px;
     background-color: #F8A728;
-    padding: 5px 15px;
-    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
     border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: 700;
-    transform: rotate(-90deg) translate(-100px, 0px);
+    width: fit-content;
+}
+
+#ip {
+    transform: rotate(-90deg) translate(-70px, 0px);
+}
+
+#cop {
+    transform: rotate(-90deg) translate(-70px, -20px);
 }
 
 #associates h1 {
     color: white;
     text-transform: uppercase;
-    background-color: #141414;
     font-size: x-large;
-    padding: 10px 15px;
+    padding: 10px 10px;
     text-align: center;
     display: inline-block;
     position: relative;
-    left: 20%;
+    left: 0%;
     font-weight: bold;
     margin-bottom: 45px;
     border-bottom-style: solid;
     border-bottom-width: 4.5px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     border-color: #E64E04;
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    left: 1%;
 }
 
 #associates .col-md-4 {
@@ -563,21 +567,20 @@ header {
 }
 
 
-/* 
-#first-img {
+/* #first-img {
     padding: 0px;
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
 #second-img {
     padding: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #third-img {
     padding: 0px;
-    padding-left: 10px;
+    padding-left: 25px;
 } */
 
 #associates .associates-wrapper {
@@ -585,18 +588,17 @@ header {
     vertical-align: top;
     position: relative;
     margin: 15px;
-    padding: 0px;
+    padding: 15px;
     background-color: white;
-    border: #cdcedb solid;
-    border-radius: 70px;
+    border-radius: 80px;
 }
 
 #associates img {
     max-width: 60%;
     max-height: 80%;
     vertical-align: middle;
-    /* width: auto;
-    height: auto; */
+    width: auto;
+    height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -609,16 +611,16 @@ header {
 /*apply-now*/
 
 #apply-now {
-    background-color: #F8A728;
     min-height: 65vh;
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: "Montserrat", sans-serif;
     color: #2A2A2A;
+    background-color: rgba(248, 167, 40, 1);
+    background-image: repeating-linear-gradient( 45deg, rgba(251, 182, 74, 1), rgba(251, 182, 74, 1) 5px, transparent 0px, transparent 40px), repeating-linear-gradient( -45deg, rgba(251, 182, 74, 1), rgba(251, 182, 74, 1) 5px, transparent 0px, transparent 40px);
 }
 
 #apply-now h3 {
-    color: #2A2A2A;
     text-align: center;
     background-color: white;
     display: inline-block;
@@ -650,6 +652,10 @@ header {
 #apply-now a:hover {
     color: #fbb64a;
     cursor: pointer;
+}
+
+#whitespace {
+    background-color: #ffffff;
 }
 
 
@@ -792,16 +798,22 @@ Responsive media queries
         justify-content: center;
         align-items: center;
     }
+    #associates {
+        text-align: center;
+    }
     #associates h2 {
         color: #2A2A2A;
         font-family: "Montserrat", sans-serif;
-        font-size: 10px;
+        font-size: 15px;
         margin-bottom: 0px;
         background-color: #F8A728;
         padding: 5px 15px;
         border-radius: 8px;
         font-weight: 700;
-        transform: rotate(0deg) translate(0px, 0px);
+        transform: rotate(0deg) translate(200px, 0px);
+    }
+    .associates-wrapper img {
+        margin: 0px;
     }
 }
 
@@ -919,27 +931,25 @@ Responsive media queries
         width: 75%;
         text-align: center;
     }
+    #ip {
+        transform: none;
+    }
+    #cop {
+        transform: none;
+    }
+    #associates h2 {
+        width: 100%;
+    }
     #associates .col-md-4 {
         padding-left: 20px;
         padding-right: 20px;
     }
     #associates .associates-wrapper {
         min-height: 150px !important;
+        width: 100%;
     }
     #apply-now a {
         width: 60%;
-    }
-    #associates h2 {
-        color: #2A2A2A;
-        font-family: "Montserrat", sans-serif;
-        font-size: 10px;
-        margin-bottom: 0px;
-        background-color: #F8A728;
-        padding: 5px 15px;
-        text-align: left;
-        border-radius: 8px;
-        font-weight: 700;
-        transform: rotate(0deg) translate(0px, 0px);
     }
     #responsibilities h1 {
         font-size: 19px;
