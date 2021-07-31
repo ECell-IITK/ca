@@ -112,7 +112,7 @@ header {
 
 .navbar-brand {
     font-size: 28px;
-    font-family: "raleway-heavy", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     display: inline;
     margin-bottom: 10px;
@@ -191,7 +191,7 @@ header {
 
 @media (max-width: 768px) {
     .navbar-collapse {
-        background: rgba(48, 51, 107, 0.8);
+        background: #141414;
     }
     .square-box {
         min-height: 300px !important;
@@ -947,6 +947,7 @@ Responsive media queries
     #associates .associates-wrapper {
         min-height: 150px !important;
         width: 100%;
+        transform: translate(-20px, 0px);
     }
     #apply-now a {
         width: 60%;
@@ -956,9 +957,19 @@ Responsive media queries
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
     }
+    #responsibilities p {
+        transform: translate(10px, 0px);
+    }
     #contact h1 {
         font-size: 19px;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
+        transform: translate(-3px, 0px);
+    }
+    .wrapper .grid-container {
+        transform: translate(0px, 10px);
+    }
+    .heading {
+        transform: translate(0px, 70px);
     }
 }
