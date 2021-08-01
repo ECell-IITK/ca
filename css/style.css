@@ -88,7 +88,7 @@ Responsive media queries
 ***********************************/
 
 .header {
-    background: url("../img/bnbnbn.jpg") no-repeat fixed;
+    background: url("../img/toppageimg.png") no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -268,7 +268,7 @@ header {
 
 .banner-text h2 {
     font-size: 60px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     /* font-family: 'Questrial', sans-serif; */
@@ -280,7 +280,6 @@ header {
     font-size: 33px;
     font-weight: 300;
     font-family: "raleway-heavy", serif;
-    text-transform: uppercase;
 }
 
 .banner-text h2 span {
@@ -964,10 +963,12 @@ Responsive media queries
         font-size: 19px;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
-        transform: translate(-3px, 0px);
+        /* transform: translate(-3px, 0px); */
+        max-width: 90%;
     }
     .wrapper .grid-container {
-        transform: translate(0px, 10px);
+        transform: translate(15px, 0px);
+        max-width: 90%;
     }
     .heading {
         transform: translate(0px, 70px);
