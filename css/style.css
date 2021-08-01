@@ -92,7 +92,7 @@ Responsive media queries
 ***********************************/
 
 .header {
-    background: linear-gradient(90deg, #000000 -24.3%, #404040 -11.13%, rgba(0, 0, 0, 0.6) 57.24%), rgba(0, 0, 0, 0.5) url("../img/toppageimg.png") no-repeat fixed;
+    background: linear-gradient(90deg, #000000 -24.3%, #404040 -11.13%, rgba(0, 0, 0, 0.6) 57.24%), rgba(0, 0, 0, 0.5) url("../img/Rectangle.png") no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
     position: relative;
