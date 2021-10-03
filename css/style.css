@@ -544,8 +544,12 @@ header {
     transform: rotate(-90deg) translate(-70px, 0px);
 }
 
+#wp {
+    transform: rotate(-90deg) translate(-70px, -10px);
+}
+
 #cop {
-    transform: rotate(-90deg) translate(-70px, -20px);
+    transform: rotate(-90deg) translate(-70px, -40px);
 }
 
 #associates h1 {
@@ -935,6 +939,9 @@ Responsive media queries
         text-align: center;
     }
     #ip {
+        transform: none;
+    }
+    #wp {
         transform: none;
     }
     #cop {
