@@ -30,6 +30,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.imges {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
 body {
     /* background-color: #141414; */
     line-height: 1.4;
@@ -92,7 +99,7 @@ Responsive media queries
 ***********************************/
 
 .header {
-    background: linear-gradient(90deg, #000000 -24.3%, #404040 -11.13%, rgba(0, 0, 0, 0.6) 57.24%), rgba(0, 0, 0, 0.5) url("../img/Rectangle.png") no-repeat fixed;
+    background: linear-gradient(90deg, #000000 -24.3%, #404040 -11.13%, rgba(0, 0, 0, 0.6) 57.24%), rgba(0, 0, 0, 0.5) url("../bg.jpeg") no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -152,8 +159,10 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: #111111;
+    background-color: #eab543;
     border-radius: 15px;
+    width: 55vw;
+    align-items: center;
 }
 
 .grid-item {
@@ -164,8 +173,10 @@ header {
 }
 
 .item1 {
-    color: #ffffff;
+    color: black;
+    background-color: #eab543;
     text-align: center;
+
     font-size: 20px;
     padding: 20px;
 }
@@ -178,8 +189,12 @@ header {
 }
 
 .button.yellow-blue {
-    background-color: #eab543;
-    color: #111111;
+    background-color: #111111;
+    color: #eab543;
+    width: 217px;
+    height: 54.65px;
+    box-shadow: 0px 4px 4px #B0B0B0;
+    border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     float: right;
     font-weight: bold;
@@ -197,18 +212,22 @@ header {
     .navbar-collapse {
         background: #141414;
     }
+
     .square-box {
         min-height: 300px !important;
         max-width: 250px !important;
     }
+
     .grid-item {
         font-family: "Montserrat", sans-serif;
         font-size: 13.5px;
     }
+
     a.button.yellow-blue {
         padding: 10px 15px;
         margin-right: 15px;
     }
+
     .navbar-brand>img {
         display: none;
     }
@@ -254,27 +273,27 @@ header {
     padding-left: 60px;
     padding-right: 60px;
     text-align: center;
-    font-family: "raleway-heavy";
+    font-family: 'Merriweather';
     text-transform: uppercase;
     color: #f2f3eb;
     font-size: 70px;
     border-radius: 19px;
 }
 
-.navbar-border {}
+/* .navbar-border {} */
 
 .banner-text {
     /* border-left: 5px solid #BE2525; */
     padding: 15px 40px;
-    color: #eab543;
-    margin-top: 170px;
+    color: black;
+    margin-top: 15vh;
 }
 
 .banner-text h2 {
     font-size: 60px;
     background-color: whitesmoke;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     /* font-family: 'Questrial', sans-serif; */
     font-family: "raleway-heavy";
     text-transform: uppercase;
@@ -296,9 +315,9 @@ header {
     margin-left: -130px;
 }
 
-.overlay-detail {
+/* .overlay-detail {
     /* margin: 0 auto; */
-}
+
 
 .border-red {
     border-color: red !important;
@@ -344,18 +363,16 @@ header {
 #whyca-h1 {
     color: #2A2A2A;
     background-color: white !important;
-    font-size: x-large;
+    /*font-size: x-large;*/
     padding: 10px 10px;
     text-align: center;
     display: inline-block;
     position: relative;
     left: 20%;
+    font-family: 'Merriweather';
     font-weight: bold;
     margin-bottom: 45px;
-    border-bottom-style: solid;
-    border-bottom-width: 4.5px;
-    padding-bottom: 2px;
-    border-color: #E64E04;
+
 }
 
 #whyca .square-box {
@@ -366,12 +383,12 @@ header {
 .square-box h3 {
     color: #F8A728;
     font-weight: bold;
-    font-size: large;
+    font-size: 2em;
     margin-bottom: 40px;
 }
 
 .square-box p {
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -379,8 +396,6 @@ header {
 /* Responsibilities  */
 
 #responsibilities {
-    background-color: #141414;
-    border-radius: 140px 140px 0px 0px;
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
@@ -393,24 +408,14 @@ header {
 }
 
 #responsibilities h1 {
-    color: white;
     text-transform: uppercase;
-    background-color: #141414;
-    font-size: x-large;
     padding: 10px 15px;
     text-align: center;
     display: inline-block;
-    position: relative;
-    left: 20%;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 45px;
-    border-bottom-style: solid;
-    border-bottom-width: 4.5px;
-    padding-bottom: 3px;
-    border-color: #E64E04;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
-    position: relative;
-    left: 1%;
 }
 
 .text-right {
@@ -424,7 +429,6 @@ header {
 
 #responsibilities .square-box {
     min-height: 200px;
-    background-color: #141414;
     font-family: "Montserrat", sans-serif;
     width: 70%;
 }
@@ -445,16 +449,15 @@ header {
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
-    border-radius: 170px;
 }
 
 #contact h4 {
-    color: #30326b;
+    color: white;
     letter-spacing: 10px;
 }
 
 #contact h4 a {
-    color: #30326b;
+    color: white;
 }
 
 #contact h4 a :hover {
@@ -462,14 +465,14 @@ header {
 }
 
 #contact h5 {
-    color: #30326b;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 20px;
 }
 
 #contact h3 {
-    color: #30326b;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -479,7 +482,7 @@ header {
     color: #2A2A2A;
     text-transform: uppercase;
     background-color: white;
-    font-size: x-large;
+    /*font-size: x-large;*/
     padding: 10px 20px;
     text-align: center;
     display: inline-block;
@@ -487,10 +490,7 @@ header {
     left: 20%;
     font-weight: bold;
     margin-bottom: 45px;
-    border-bottom-style: solid;
-    border-bottom-width: 4.5px;
-    padding-bottom: 3px;
-    border-color: #E64E04;
+
     font-family: "Montserrat", sans-serif;
     position: relative;
     left: 1%;
@@ -508,13 +508,14 @@ header {
 #contact img {
     border-radius: 60%;
     margin-left: -35px;
+    object-fit: cover;
 }
 
 
 /* Associates */
 
 #associates {
-    background-image: url(../img/background_associates.png);
+
     min-height: 100vh;
     padding-top: 100px;
     margin-bottom: -3px;
@@ -527,7 +528,7 @@ header {
 #associates h2 {
     color: #2A2A2A;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     margin-bottom: 0px;
     background-color: #F8A728;
     padding-left: 20px;
@@ -538,6 +539,7 @@ header {
     padding-bottom: 5px;
     font-weight: 700;
     width: fit-content;
+    /*margin-left:40px;*/
 }
 
 #ip {
@@ -553,20 +555,12 @@ header {
 }
 
 #associates h1 {
-    color: white;
     text-transform: uppercase;
-    font-size: x-large;
     padding: 10px 10px;
     text-align: center;
-    display: inline-block;
     position: relative;
     left: 0%;
     font-weight: bold;
-    margin-bottom: 45px;
-    border-bottom-style: solid;
-    border-bottom-width: 4.5px;
-    padding-bottom: 2px;
-    border-color: #E64E04;
 }
 
 #associates .col-md-4 {
@@ -597,39 +591,22 @@ header {
     margin: 15px;
     padding: 15px;
     background-color: white;
-    border-radius: 80px;
-}
-
-#associates img {
-    max-width: 60%;
-    max-height: 80%;
-    vertical-align: middle;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    border-radius: 200px;
 }
 
 
 /*apply-now*/
 
 #apply-now {
-    min-height: 65vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 50px 0;
     font-family: "Montserrat", sans-serif;
-    color: #2A2A2A;
-    background-color: rgba(248, 167, 40, 1);
-    background-image: repeating-linear-gradient( 45deg, rgba(251, 182, 74, 1), rgba(251, 182, 74, 1) 5px, transparent 0px, transparent 40px), repeating-linear-gradient( -45deg, rgba(251, 182, 74, 1), rgba(251, 182, 74, 1) 5px, transparent 0px, transparent 40px);
+    color: #FFFFFF;
+    background-color: black;
 }
 
 #apply-now h3 {
     text-align: center;
-    background-color: white;
+
     display: inline-block;
     width: fit-content;
     padding: 15px;
@@ -643,15 +620,19 @@ header {
     display: inline-block;
     width: 22%;
     text-align: center;
-    color: #ffffff;
+    color: #FBC335;
     font-size: 27px;
-    background-color: #222222;
+    background-color: #FFFFFF;
     border-radius: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
     font-weight: bold;
     margin-bottom: 30px;
+    box-shadow: 0px 4px 4px #FFBE55;
+    border-radius: 10px;
+    width: 282px;
+    height: 71px;
     font-family: "Montserrat", sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -717,7 +698,8 @@ footer a i {
 }
 
 .icon-image {
-    max-width: 180px;
+    max-width: 190px;
+    max-height: 70px;
     float: left;
     margin: 0px 3px 100px 110px;
     position: relative;
@@ -727,12 +709,10 @@ footer a i {
 
 .about-text {
     color: #30326b;
-    font-size: small;
-    line-height: 15px;
     font-family: "Montserrat", sans-serif;
-    text-align: left;
-    line-height: 20px;
-    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 19px;
 }
 
 #about-text-2 {
@@ -740,8 +720,10 @@ footer a i {
 }
 
 .rect {
-    background: #2B2B2B;
+
     border-radius: 60px;
+    margin-left: 20px;
+    margin-right: -20px;
     margin-top: 50px;
     height: 170px;
     width: 380px;
@@ -795,19 +777,23 @@ Responsive media queries
     .title-text {
         margin-bottom: 15px;
     }
+
     #whyca .square-box {
         height: 400px !important;
         max-width: 110%;
     }
+
     .row-flex {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     #associates {
         text-align: center;
     }
+
     #associates h2 {
         color: #2A2A2A;
         font-family: "Montserrat", sans-serif;
@@ -819,6 +805,7 @@ Responsive media queries
         font-weight: 700;
         transform: rotate(0deg) translate(200px, 0px);
     }
+
     .associates-wrapper img {
         margin: 0px;
     }
@@ -829,24 +816,31 @@ Responsive media queries
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
     .navbar-brand {
         margin-top: 5px;
     }
+
     .navbar-toggle {
         margin-top: 13px;
     }
+
     html {
         overflow-x: hidden;
     }
+
     .carousel-info {
         margin-bottom: 30px;
     }
+
     .type--fine-print {
         text-align: center;
     }
+
     .text-center-xs {
         text-align: center !important;
     }
+
     .title-box {
         text-align: left;
         margin-left: auto;
@@ -857,52 +851,66 @@ Responsive media queries
         min-width: 100vw;
         padding-top: 0px;
     }
+
     .title-box h2 {
         margin: 10px 0px 0px 10px;
     }
+
     .title-box h3 {
         padding-top: 0px;
         margin: 60px 0px 0px 15px;
     }
+
     .square-shadow {
         background-color: RGBA(0, 0, 0, 0);
         width: fit-content;
         box-shadow: 0px 0px #eab543;
         display: inline-block;
     }
+
     /* .header {
         background-color: #30336b;
     } */
     .display-sm {
         display: inline-block;
     }
+
     .banner-img-cont {
         margin-top: 100px;
         margin-bottom: 0px;
         min-width: 100vw;
         text-align: center;
     }
+
     .banner-img {
         max-width: 200px;
     }
+
     .banner-text h2 {
         font-size: 36px;
     }
+
     .banner-text h3 {
         font-size: 20px;
     }
+
     .about-text {
-        text-align: left;
-        font-size: 15px;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 24px;
     }
+
     .square-shadow-left {
         width: 85%;
         border-radius: 10px;
     }
+
     .square-box {
         padding: 20px;
         min-height: 300px;
     }
+
     #whyca-h1 {
         /* position: relative;
         left: 10%;
@@ -912,75 +920,91 @@ Responsive media queries
         font-size: 19px;
         font-weight: 700;
     }
+
     .rect {
         margin: auto;
         margin-top: 25px;
         width: 97%;
+        display: inherit;
     }
+
     #about img {
         margin-right: 30px !important;
         max-width: 100%;
     }
+
     #apply-now {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     #apply-now h3 {
         width: 75%;
         font-size: 1.5em;
     }
+
     #associates h1 {
         font-size: 19px;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
     }
+
     #associates .container {
         width: 75%;
         text-align: center;
     }
+
     #ip {
         transform: none;
     }
+
     #wp {
         transform: none;
     }
+
     #cop {
         transform: none;
     }
+
     #associates h2 {
         width: 100%;
     }
+
     #associates .col-md-4 {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     #associates .associates-wrapper {
         min-height: 150px !important;
         width: 100%;
         transform: translate(-20px, 0px);
     }
+
     #apply-now a {
         width: 60%;
     }
+
     #responsibilities h1 {
-        font-size: 19px;
+        font-size: 36px;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
     }
-    #responsibilities p {
-        transform: translate(10px, 0px);
-    }
+
     #contact h1 {
-        font-size: 19px;
+        font-size: 30px;
+        line-height: 40px;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         /* transform: translate(-3px, 0px); */
         max-width: 90%;
     }
+
     .wrapper .grid-container {
         transform: translate(15px, 0px);
         max-width: 90%;
     }
+
     .heading {
         transform: translate(0px, 70px);
     }
