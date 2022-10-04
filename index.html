@@ -38,6 +38,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style2.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
@@ -74,8 +75,7 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#whyca">Why CA?</a></li>
                             <li><a href="#responsibilities">Responsibilities</a></li>
-                            <li><a href='/registration.html'>Apply Now</a></li>
-                            <!-- <li><a href="https://caportal.ecelliitk.org/Login">CA-Portal</a></li> -->
+                            <li><a href="/registration.html">Apply Now</a></li>
                             <!--  <li><a target="_blank" href="https://forms.gle/tcKQ7azhzopESi748">Register</a></li>  -->
                             <li><a href="#contact">Contact Us</a></li>
                         </ul>
@@ -86,23 +86,23 @@
         <div class="wrapper">
             <div>
                 <div class="row">
-                    <div class="col-md-12 wow fadeIn delay-05s">
+                    <div class="col-md-12">
                         <div class="banner-text square-shadow title-box ">
-                            <h3>Entrepreneurship Cell , IIT Kanpur</h3>
+                            <h3 class="heading4 animate-intro">Entrepreneurship Cell , IIT Kanpur</h3>
                             <br>
-                            <div style="display: flex; align-items: flex-end;">
-                                <img src="./img/CA program final logo 1.png" />
-                                <h2>Campus <br> Ambassador <br> Program</h2>
+                            <div class="animate-intro" style="display: flex; align-items: flex-end;">
+                                <img id="intro-image" src="./img/CA program final logo 1.png" />
+                                <h2 class="heading5">Campus <br> Ambassador <br> Program</h2>
                             </div>
 
                             <br><br><br>
-                            <div class="grid-container">
-                                <div class="grid-item item1">
+                            <div class="grid-container apply-box">
+                                <div class="grid-item item1" >
                                     Be the representative of your campus
                                 </div>
                                 <div class="grid-item item2">
                                     <a class="button yellow-blue apply-now"
-                                        href="https://www.townscript.com/e/campus-ambassador-2021-22-ECell-IITK">
+                                        href="/registration.html">
                                         Apply now
                                     </a>
                                 </div>
@@ -114,10 +114,10 @@
         </div>
     </div>
 
-    <div class="container" id="about" style="display: flex; flex-direction:column; justify-content:center">
-        <h1 class="text-center heading1">ABOUT</h1>
+    <div class="container"  id="about" style="display: flex; flex-direction:column; justify-content:center">
+        <h1 class="text-center heading1" class='h'>ABOUT</h1>
         <div class="col-md-10" style="margin: 0 auto;">
-            <div class="about-text" style="padding-top: 20px">
+            <div class="about-text slow" style="padding-top: 20px">
                 The Campus Ambassador program is our effort to create an entrepreneurial web of college students
                 across the country and provide them with ample opportunities to develop and revolutionize the
                 start-up world. The selected Campus Ambassadors will work collectively
@@ -128,7 +128,7 @@
         </div>
         <br>
         <div class="col-md-10" style="margin: 0 auto">
-            <div id="about-text-2" class="about-text">
+            <div id="about-text-2" class="about-text slow2">
                 Entrepreneurship Cell, IIT Kanpur, is a non-profit organization established to nurture
                 entrepreneurial culture in IITK, and open doors for our next generation innovators,
                 entrepreneurs and changemakers to get out there and leave their marks on the world.
@@ -166,7 +166,7 @@
             </div>
 
             <div class="col-md-4 col-sm-12 col-lg-4 rect" style="padding: 0; margin: 0">
-                <div class="col-md-4">
+                <div class="col-md-4" >
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 171 171"
                         style=" fill:#000000;">
                         <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="col-md-8 text-center Institutions" style="color:black"><span class="counter">1000+</span> <br> Institutions</div>
-            </div>
+            </div>\
         </div>
 
     </div>
@@ -464,7 +464,7 @@
     <section id="apply-now" class="text-center" style="width:100%; font-family: 'Merriweather';">
         <h3>Be the representative of your campus</h3>
         <br><br>
-        <a target="_blank" href="https://www.townscript.com/e/campus-ambassador-2021-22-ECell-IITK">
+        <a target="_blank" href="/registration.html">
             Apply Now
         </a>
         <br> 
