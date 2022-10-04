@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Ambassador Program - E-Cell IITK</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <meta
+      name="description"
+      content="The Campus Ambassador program is our effort to create an entrepreneurial web of college students across the country and provide them with ample opportunities to develop and revolutionize the start-up world"
+    />
+    <meta
+      name="keywords"
+      content="Campus Ambassador, E-Cell IITK CA, CA, CAP, Program, Entrepreneurship Cell, E-Cell IITK, ECell IITK, IIT Kanpur, IITK, IIT"
+    />
+    <meta
+      name="google-site-verification"
+      content="WwU4SfJtephg6Aqh8kTfSITpcwlKRcE9oan0yJwRsTU"
+    />
+
+    <meta property="og:title" content="E-Cell IITK Campus Ambassador Program" />
+    <meta property="og:image" content="./img/ss.jpg" />
+    <meta property="og:url" content="https://ca.ecelliitk.org/" />
+    <meta
+      property="og:site_name"
+      content="Campus Ambassador Program, E-Cell IITK"
+    />
+    <meta
+      property="og:description"
+      content="Campus Ambassador Program, Entrepreneurship Cell IIT Kanpur"
+    />
+    <meta
+      name="twitter:title"
+      content="E-Cell IITK Campus Ambassador Program"
+    />
+    <meta name="twitter:image" content="./img/ss.jpg" />
+    <meta name="twitter:url" content="https://ca.ecelliitk.org/" />
+    <meta name="twitter:card" content="" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style2.css" />
+  </head>
+
+  <body
+    id="myPage"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="60"
+    onload="myFunction()"
+  >
+    <script>
+      function myFunction() {
+        //  alert("Registrations for Campus Ambassador Program, Entrepreneurship cell IITK are closed. The selected Campus ambassadors should have recieved a mail with the offer letter.");
+      }
+    </script>
+    <div id="loader" class="center"></div>
+
+    <header id="main-header">
+      <nav
+        class="navbar navbar-default navbar-fixed-top"
+        style="padding: 0; background: #141414"
+      >
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#lauraMenu"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="https://www.ecelliitk.org/">
+              <img
+                src="./img/kanpur logo 1.png"
+                style="
+                  position: absolute;
+                  width: 50px;
+                  height: 50px;
+                  left: 30px;
+                  top: 10px;
+                "
+              />
+              <img
+                src="./img/nav.png"
+                style="
+                  position: absolute;
+                  width: 50px;
+                  height: 50px;
+                  left: 100px;
+                  top: 10px;
+                "
+              />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="lauraMenu">
+            <ul class="nav navbar-nav navbar-right navbar-border">
+              <li class="active"><a href="/#">Home</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#whyca">Why CA?</a></li>
+              <li><a href="/#responsibilities">Responsibilities</a></li>
+              <!-- <li>
+                <a href="https://caportal.ecelliitk.org/Login">CA-Portal</a>
+              </li> -->
+              <li>
+                <a href="/registration.html">Apply Now</a>
+              </li>
+              <!--  <li><a target="_blank" href="https://forms.gle/tcKQ7azhzopESi748">Register</a></li>  -->
+              <li><a href="/#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="registration" id="registration">
+      <div class="container">
+        <div class="title">Registration Form</div>
+        <div class="error"></div>
+        <div class="content">
+          <form
+            id="registration-form"
+            method="post"
+            action="http://localhost:8080"
+          >
+            <h3>General Details</h3>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="name"
+                  id="name"
+                  required
+                  oninvalid="this.setCustomValidity('Please enter your name.')"
+                  onchange="this.setCustomValidity('')"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">College Name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your college name"
+                  name="collegeName"
+                  id="collegeName"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Year of Graduation</span>
+                <input
+                  type="text"
+                  placeholder="Enter your graduation year"
+                  name="yearOfGraduation"
+                  id="yearofGraduation"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input
+                  type="number"
+                  placeholder="Enter your number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Department</span>
+                <input
+                  type="text"
+                  placeholder="Confirm your department"
+                  name="department"
+                  id="department"
+                  required
+                />
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" value="male" name="gender" id="dot-1" />
+              <input type="radio" value="female" name="gender" id="dot-2" />
+              <input
+                type="radio"
+                value="Prefer not to say"
+                name="gender"
+                id="dot-3"
+              />
+              <span class="gender-title" style="font-size: medium">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <h3>Social Media Details</h3>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Facebook URL</span>
+                <input
+                  type="text"
+                  placeholder="Enter your facebook profile url"
+                  name="facebook"
+                  id="facebook"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Instagram username</span>
+                <input
+                  type="text"
+                  placeholder="Enter your instagram username"
+                  name="instagram"
+                  id="instagram"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Linkedin URL</span>
+                <input
+                  type="text"
+                  placeholder="Enter your linkedin profile URL"
+                  name="linkedin"
+                  id="linkedin"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Twitter handle</span>
+                <input
+                  type="text"
+                  placeholder="Enter your twitter handle"
+                  name="twitter"
+                  id="twitter"
+                  required
+                />
+              </div>
+            </div>
+            <div class="gender-details">
+              <span style="font-size: medium" class="gender-title"
+                >Upload College ID</span
+              >
+              <input
+                type="file"
+                id="collegeID"
+                name="collegeID"
+                class="file-upload"
+                required
+              />
+            </div>
+            <div class="button">
+              <input type="submit" value="Register" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="toast">
+      <div id="img">
+        <i class="fa-solid fa-circle-check" style="color: white"></i>
+      </div>
+      <div id="desc">Response Saved Successfully</div>
+    </div>
+
+    <footer class="text-center">
+      <div class="row" style="font-family: 'Merriweather'">
+        <h3 style="font-family: 'Merriweather'; font-weight: 1000">
+          ENTREPRENEURSHIP CELL,<br class="display-sm" />
+          IIT KANPUR
+        </h3>
+      </div>
+      <div class="row" style="font-family: 'Merriweather'">
+        Ideate | Innovate | Incubate
+      </div>
+      <br />
+      <div class="row">
+        <h4 style="color: #ffbe55">
+          <a target="_blank " href="https://facebook.com/ecelliitk ">
+            <img src="img/facebook.png" alt="Facebook" />
+          </a>
+          <a
+            target="_blank "
+            href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kanpur/ "
+          >
+            <img src="img/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a target="_blank " href="https://www.instagram.com/ecelliitk/ ">
+            <img src="img/instagram.png" alt="Instagram" />
+          </a>
+          <a target="_blank " href="https://twitter.com/ecelliitk ">
+            <img src="img/twitter.png" alt="Twitter" />
+          </a>
+          <a
+            target="_blank "
+            href="https://www.youtube.com/channel/UCvxavCg0UhXq6oKkrBHc9zQ "
+          >
+            <img src="img/youtube.png" alt="YouTube" />
+          </a>
+        </h4>
+      </div>
+      <br />
+      <div class="row" style="font-family: 'Merriweather'">
+        With Love from E-Cell,<br class="display-sm" />
+        IIT Kanpur
+      </div>
+    </footer>
+
+    <script>
+      function launch_toast() {
+        var x = document.getElementById("toast");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 5000);
+      }
+
+      document
+        .getElementById("registration-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          document.querySelector("#loader").style.display = "block";
+          const formData = new FormData(e.target);
+          let formObject = Object.fromEntries(formData.entries());
+
+          var reader = new FileReader();
+          reader.readAsDataURL(formObject.collegeID);
+          reader.onload = () => {
+            formObject = { ...formObject, collegeID: reader.result };
+
+            fetch("https://ca-site-backend.vercel.app/", {
+              headers: {
+                "Content-Type": "application/json",
+              },
+              method: "post",
+              body: JSON.stringify(formObject),
+              credentials: "include",
+            })
+              .then((res) => {
+                if (res.status != 200) {
+                  document.getElementById("desc").textContent =
+                    "Response could not be saved";
+                  document.getElementById(
+                    "img"
+                  ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
+                  launch_toast();
+                  document.querySelector(".error").textContent = res.statusText;
+                  setTimeout(() => {
+                    document.querySelector(".error").textContent = "";
+                    window.scroll = 0;
+                  }, 5000);
+                } else {
+                  document.getElementById("desc").textContent =
+                    "Response Saved Successfully";
+                  document.getElementById(
+                    "img"
+                  ).innerHTML = `<i class="fa-solid fa-circle-check" style="color: white"></i>`;
+                  launch_toast();
+                  $("#registration-form").trigger("reset");
+                }
+                document.querySelector("#loader").style.display = "none";
+              })
+              .catch((err) => {
+                document.getElementById("desc").textContent =
+                  "Response could not be saved";
+                document.getElementById(
+                  "img"
+                ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
+                launch_toast();
+                console.error(err);
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector(".error").textContent = err;
+                setTimeout(() => {
+                  document.querySelector(".error").textContent = "";
+                  window.scroll = 0;
+                }, 5000);
+              });
+          };
+          reader.onerror = (err) => {
+            console.error(err);
+            document.querySelector("#loader").style.display = "none";
+          };
+        });
+    </script>
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery.easing.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.bxslider.min.js "></script>
+    <script src="js/wow.js "></script>
+    <script src="js/custom.js "></script>
+  </body>
+</html>
