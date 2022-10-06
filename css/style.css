@@ -31,8 +31,8 @@ html {
 }
 
 .imges {
-    height: 200px;
     width: 200px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -1405,4 +1405,48 @@ Responsive media queries
 .error {
     color: red;
     font-size: medium;
+}
+
+.associate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(93, 93, 93);
+    box-shadow: 1px 2px 8px 1px #626262;
+    border-radius: 20px;
+    width: max-content;
+    margin: auto;
+    transition: all 0.5s;
+    padding: 10px 30px;
+    max-width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.associate-container h2 {
+    background-color: transparent !important;
+    font-weight: normal !important;
+    margin-bottom: 10px !important;
+    font-size: large !important;
+}
+
+.associate-container img {
+    margin: 10px 0;
+}
+
+.associate-container p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.associate-container:hover {
+    transform: scale(1.1);
+}
+
+#associates {
+    text-align: center !important;
+}
+
+#associates .container .row {
+    margin-bottom: 50px;
 }

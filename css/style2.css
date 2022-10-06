@@ -338,8 +338,9 @@ footer img {
   }
 
   .imges {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
   }
 
   .goodies {
