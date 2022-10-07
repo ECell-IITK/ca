@@ -133,7 +133,7 @@
                 <a href="https://ecelliitk.org/ca">Home</a>
               </li>
               <li><a href="https://ecelliitk.org/ca/#about">About</a></li>
-              <li><a href="https://ecelliitk.org/ca//#whyca">Why CA?</a></li>
+              <li><a href="https://ecelliitk.org/ca/#whyca">Why CA?</a></li>
               <li>
                 <a href="https://ecelliitk.org/ca/#responsibilities"
                   >Responsibilities</a
@@ -222,14 +222,15 @@
                 />
               </div>
               <div class="input-box">
-                <span class="details">Department</span>
-                <input
-                  type="text"
-                  placeholder="Confirm your department"
-                  name="department"
-                  id="department"
-                  required
-                />
+                <span class="details">How you hear about us?</span>
+                <select id="heared_by" name="heared_by" required>
+                  <option>Facebook</option>
+                  <option>Instagram</option>
+                  <option>Linkedin</option>
+                  <option>Twitter</option>
+                  <option>Hunt for success</option>
+                  <option>Other</option>
+                </select>
               </div>
             </div>
             <div class="gender-details">
@@ -378,6 +379,8 @@
           x.className = x.className.replace("show", "");
         }, 5000);
       }
+
+      document.getElementById("heared_by").selectedIndex = -1;
 
       document
         .getElementById("registration-form")

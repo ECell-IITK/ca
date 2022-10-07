@@ -1066,7 +1066,8 @@ Responsive media queries
     margin-bottom: 5px;
 }
 
-#registration .user-details .input-box input {
+#registration .user-details .input-box input,
+select {
     height: 45px;
     width: 100%;
     outline: none;
