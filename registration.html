@@ -177,8 +177,6 @@
                   name="name"
                   id="name"
                   required
-                  oninvalid="this.setCustomValidity('Please enter your name.')"
-                  onchange="this.setCustomValidity('')"
                 />
               </div>
               <div class="input-box">
@@ -303,7 +301,10 @@
             </div>
             <div class="gender-details">
               <span style="font-size: medium" class="gender-title"
-                >Upload College ID</span
+                >Upload College ID
+                <span style="color: red; font-size: small"
+                  >(max size: 5 MB)</span
+                ></span
               >
               <input
                 type="file"
@@ -312,6 +313,7 @@
                 class="file-upload"
                 required
               />
+              <span id="file_size"></span>
             </div>
             <div class="button">
               <input type="submit" value="Register" />
@@ -380,6 +382,18 @@
         }, 5000);
       }
 
+      document.getElementById("collegeID").addEventListener("change", (e) => {
+        if (e.srcElement.files[0].size / 1024 / 1024 > 5) {
+          document.getElementById("collegeID").value = "";
+          document.getElementById("file_size").textContent =
+            "File size exceeded";
+        } else {
+          document.getElementById("file_size").textContent = `${Number(
+            e.srcElement.files[0].size / 1024 / 1024
+          ).toFixed(2)} MB`;
+        }
+      });
+
       document.getElementById("heared_by").selectedIndex = -1;
 
       document
@@ -405,17 +419,21 @@
             })
               .then((res) => {
                 if (res.status != 200) {
-                  document.getElementById("desc").textContent =
-                    "Response could not be saved";
-                  document.getElementById(
-                    "img"
-                  ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
-                  launch_toast();
-                  document.querySelector(".error").textContent = res.statusText;
-                  setTimeout(() => {
-                    document.querySelector(".error").textContent = "";
-                    window.scroll = 0;
-                  }, 5000);
+                  res.text().then((result_body) => {
+                    console.log(result_body);
+                    document.getElementById("desc").textContent =
+                      "Response could not be saved";
+                    document.getElementById(
+                      "img"
+                    ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
+                    launch_toast();
+                    document.querySelector(".error").textContent = result_body;
+                    setTimeout(() => {
+                      document.querySelector(".error").textContent =
+                        result_body;
+                      window.scroll = 0;
+                    }, 5000);
+                  });
                 } else {
                   document.getElementById("desc").textContent =
                     "Response Saved Successfully";
@@ -438,7 +456,7 @@
                 document.querySelector("#loader").style.display = "none";
                 document.querySelector(".error").textContent = err;
                 setTimeout(() => {
-                  document.querySelector(".error").textContent = "";
+                  document.querySelector(".error").textContent = err;
                   window.scroll = 0;
                 }, 5000);
               });
