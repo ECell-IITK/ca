@@ -428,7 +428,7 @@
                     ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
                     launch_toast();
                     document.querySelector(".error").textContent = result_body;
-                    window.scroll = 0;
+                    window.scrollTo(0, 0);
                   });
                 } else {
                   document.getElementById("desc").textContent =
@@ -452,7 +452,7 @@
                 console.log(err);
                 document.querySelector("#loader").style.display = "none";
                 document.querySelector(".error").textContent = err;
-                window.scroll = 0;
+                window.scrollTo(0, 0);
               });
           };
           reader.onerror = (err) => {
