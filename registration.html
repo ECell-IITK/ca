@@ -428,11 +428,7 @@
                     ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
                     launch_toast();
                     document.querySelector(".error").textContent = result_body;
-                    setTimeout(() => {
-                      document.querySelector(".error").textContent =
-                        result_body;
-                      window.scroll = 0;
-                    }, 5000);
+                    window.scroll = 0;
                   });
                 } else {
                   document.getElementById("desc").textContent =
@@ -441,6 +437,7 @@
                     "img"
                   ).innerHTML = `<i class="fa-solid fa-circle-check" style="color: white"></i>`;
                   launch_toast();
+                  document.querySelector(".error").textContent = "";
                   $("#registration-form").trigger("reset");
                 }
                 document.querySelector("#loader").style.display = "none";
@@ -452,13 +449,10 @@
                   "img"
                 ).innerHTML = `<i class="fa-solid fa-xmark" style="color: white"></i>`;
                 launch_toast();
-                console.error(err);
+                console.log(err);
                 document.querySelector("#loader").style.display = "none";
                 document.querySelector(".error").textContent = err;
-                setTimeout(() => {
-                  document.querySelector(".error").textContent = err;
-                  window.scroll = 0;
-                }, 5000);
+                window.scroll = 0;
               });
           };
           reader.onerror = (err) => {
