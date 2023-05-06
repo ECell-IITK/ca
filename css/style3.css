@@ -1,0 +1,15 @@
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+@media screen and (max-width:1200px) {
+    .row{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:1000px) {
+    .row{
+        flex-direction: column;
+    }
+}
