@@ -1410,16 +1410,17 @@ select {
 
 .associate-container {
     display: flex;
+    width: 30%;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgb(93, 93, 93);
     box-shadow: 1px 2px 8px 1px #626262;
     border-radius: 20px;
     width: max-content;
-    margin: auto;
+    /* margin: auto; */
     transition: all 0.5s;
     padding: 10px 30px;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     justify-content: space-evenly;
 }
