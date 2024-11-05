@@ -489,7 +489,6 @@ header {
     left: 20%;
     font-weight: bold;
     margin-bottom: 45px;
-
     font-family: "Montserrat", sans-serif;
     position: relative;
     left: 1%;
@@ -623,8 +622,8 @@ header {
     font-size: 27px;
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+        padding-bottom: 20px;
     margin-top: 30px;
     font-weight: bold;
     margin-bottom: 30px;
