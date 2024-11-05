@@ -427,7 +427,7 @@ header {
 }
 
 #responsibilities .square-box {
-    min-height: 200px;
+    /* min-height: 200px; */
     font-family: "Montserrat", sans-serif;
     width: 70%;
 }
@@ -601,7 +601,6 @@ header {
     color: #FFFFFF;
     background-color: black;
 }
-
 #apply-now h3 {
     text-align: center;
 
