@@ -432,6 +432,10 @@ header {
     width: 70%;
 }
 
+#responsibilities .contentbox{
+    min-height: max-content;
+}
+
 .row1 {
     text-align: center;
 }
